@@ -34,7 +34,7 @@ class Sales(db.Model):
     sale_id = db.Column(db.Integer)                         # Unites a sale into one event
     cashier_login = db.Column(db.String(30))
     sale_date = db.Column(db.Date)
-    d_time = db.Column(db.Time)
+    sale_time = db.Column(db.Time)
     product_id = db.Column(db.Integer)
     amount = db.Column(db.Integer)
 

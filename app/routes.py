@@ -28,7 +28,7 @@ def wrong_add():
 # def open_menu():
 #     global
 
-@app.route('/add_sale', methods=['POST'])
+@app.route('/add_sale', methods=['GET', 'POST'])
 def add_sale():
     global _login, _password
     _login = request.form['login']

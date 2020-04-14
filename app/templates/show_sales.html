@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sales</title>
+</head>
+<body>
+  <!-- Список уже зафиксированных продаж -->
+	<div id="ListOfDeadlines">
+	  <h1>Here are your sales:</h1>
+	    <div class="show_deadlines">
+          {% for sale in cur_list%}
+              <li>{{ str(sale.sale_id), str(sale.cashier_login),
+                     str(sale.sale_date), str(sale.sale_time),
+                     str(sale.product_id), str(sale.amount) }}</li>
+          {% endfor %}
+        </div>
+	</div>
+</body>
+</html>
