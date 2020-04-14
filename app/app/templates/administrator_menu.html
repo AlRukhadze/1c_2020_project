@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+  <!-- Заголовок -->
+  <head>
+	<meta charset="utf-8">
+   	<title>Menu</title>
+   	<style>
+      #AddForm {
+       	width: 300px;
+	    height: 220px;
+	    text-align: left;
+	    padding: 15px;
+	    border: 3px solid #FFA500;
+	    border-radius: 10px;
+		color: #FF8C00;
+		background: #FFFFE0;
+	    display: none;
+      }
+      #AddForm:target {display: block;}
+      .floated {
+   		float:left;
+   		margin-right:10px;
+	  }
+    </style>
+  </head>
+
+  <!-- Основное содержимое страницы -->
+  <body>
+  	<!-- Приветствие (просто текстовое полотно, которое нужно по-человечески оформить) -->
+  	<div id="Hello">
+  		<p>Here's an administrator menu.</p>
+  	</div>
+
+	<!-- Поле для ввода логина и пароля , открывающееся по кнопке "Sign in" -->
+  	<div id="AddNewEvent">
+
+	  <div id="AddForm">
+	  	<form action="add_deadline" method="post" name="login_form">
+	      <p><input type="submit" class="floated" name="add event" value="Add sale info" />
+	      <a href="#">
+	        <h3><input type="button" class="floated" name="close window" value="Close" /></h3>
+		  </a></p><br>
+		</form>
+	  </div>
+
+	  <a href="#AddForm">
+	    <h3><input type="button" name="add new event" value="Open menu" /></h3>
+	  </a>
+	</div>
+
+  </body>
+</html>

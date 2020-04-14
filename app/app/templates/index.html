@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+  <!-- Заголовок -->
+  <head>
+	<meta charset="utf-8">
+   	<title>Authorisation page</title>
+   	<style>
+      #AddForm {
+       	width: 300px;
+	    height: 220px;
+	    text-align: left;
+	    padding: 15px;
+	    border: 3px solid #FFA500;
+	    border-radius: 10px;
+		color: #FF8C00;
+		background: #FFFFE0;
+	    display: none;
+      }
+      #AddForm:target {display: block;}
+      .floated {
+   		float:left;
+   		margin-right:10px;
+	  }
+    </style>
+  </head>
+
+  <!-- Основное содержимое страницы -->
+  <body>
+  	<!-- Приветствие (просто текстовое полотно, которое нужно по-человечески оформить) -->
+  	<div id="Hello">
+  		<h1>Hello!</h1>
+  		<p>The work isn't going anywhere but...</p>
+  	</div>
+
+	<!-- Поле для ввода логина и пароля , открывающееся по кнопке "Sign in" -->
+  	<div id="AddNewEvent">
+	  <h2>Have new tasks to do? Add it to your list!</h2>
+
+	  <div id="AddForm">
+	  	<form action="add_sale" method="post" name="login_form">
+	   	  <h3>Login: <input name="login" type="text" /></h3>
+	   	  <h3>Password: <input name="password" type="text" /></h3>
+	      <p><input type="submit" class="floated" name="add event" value="Sign in (push me instead of the 2nd one)" />
+	      <a href="#">
+	        <h3><input type="button" class="floated" name="close window" value="Close" /></h3>
+		  </a></p><br>
+		</form>
+	  </div>
+
+	  <a href="#AddForm">
+	    <h3><input type="button" name="add new event" value="Sign in" /></h3>
+	  </a>
+	</div>
+
+  </body>
+</html>
